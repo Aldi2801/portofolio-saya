@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio - SATRIO ALDI FIRMANSYAH</title>
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #3498db;
+      --bg: #f4f4f4;
+      --white: #fff;
+      --text: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    nav {
+      background: var(--accent);
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 5px solid var(--accent);
+      padding-left: 15px;
+    }
+
+    #portofolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    #kontak a {
+      color: var(--accent);
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SATRIO ALDI FIRMANSYAH</h1>
+    <p>Pengembang Website • Pembuat Aplikasi Mobile • Spesialis Sistem Informasi</p>
+  </header>
+
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#portofolio">Portofolio</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <section id="tentang">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah seorang programmer yang berdedikasi untuk menciptakan solusi digital yang efektif dan efisien. Dengan pengalaman yang luas dalam mengembangkan berbagai proyek, saya telah berhasil menciptakan sistem informasi sekolah yang efisien, toko online yang menarik, desain website yang estetis, serta aplikasi mobile inovatif seperti "Deteksi Jumlah Kendaraan yang Lewat". Saya juga memiliki pengalaman dalam mengelola data mahasiswa di Universitas Pancasakti Tegal.
+
+    Selain itu, saya juga memiliki pengalaman kepemimpinan sebagai Leader di salah satu perusahaan Tiens yang bergerak di bidang penjualan kesehatan dan peralatan rumah tangga, di mana saya bertanggung jawab untuk memimpin tim dan mengembangkan strategi untuk meningkatkan penjualan dan kepuasan pelanggan.
+
+    Dengan kemampuan saya dalam mengembangkan solusi digital yang efektif dan efisien, serta pengalaman kepemimpinan yang saya miliki, saya siap untuk membantu Anda menciptakan proyek yang sesuai dengan kebutuhan Anda dan memberikan hasil yang optimal.</p>
+  </section>
+
+  <section id="portofolio">
+    <h2>Portofolio</h2>
+    <div id="portofolio-grid">
+
+      <div class="card">
+        <h3>Sistem Informasi Sekolah</h3>
+        <p>Membangun dashboard sekolah yang mencakup manajemen nilai, absensi, dan keuangan.<br>
+        <strong>Teknologi:</strong> HTML, CSS, JavaScript, Python Flask, MySQL.<br>
+        <strong>Cara Pembuatan:</strong> Mendesain struktur database, membangun API backend untuk CRUD data, dan membuat antarmuka admin menggunakan template responsive.</p>
+      </div>
+
+      <div class="card">
+        <h3>Toko Online</h3>
+        <p>Platform e-commerce lengkap dengan fitur belanja dan manajemen produk.<br>
+        <strong>Teknologi:</strong> HTML, CSS, JavaScript, PHP/Laravel, MySQL.<br>
+        <strong>Cara Pembuatan:</strong> Menyusun relasi database (produk, pesanan, user), mengintegrasikan payment gateway (contoh: Midtrans), serta membangun halaman user-friendly dengan cart dan checkout.</p>
+      </div>
+
+      <div class="card">
+        <h3>Website Estetis</h3>
+        <p>Landing page untuk profil perusahaan dengan desain modern dan UX baik.<br>
+        <strong>Teknologi:</strong> HTML5, CSS3, JavaScript, GSAP.<br>
+        <strong>Cara Pembuatan:</strong> Mendesain layout di Figma, mengimplementasikan animasi interaktif, dan mengoptimalkan performa untuk mobile dan desktop.</p>
+      </div>
+
+      <div class="card">
+        <h3>Aplikasi Mobile Deteksi Kendaraan</h3>
+        <p>Aplikasi Android untuk mendeteksi dan menghitung kendaraan lewat menggunakan kamera.<br>
+        <strong>Teknologi:</strong> Android Studio, OpenCV, Java.<br>
+        <strong>Cara Pembuatan:</strong> Menggunakan kamera sebagai input, menerapkan algoritma deteksi gerakan dan counting frame berdasarkan garis batas virtual.</p>
+      </div>
+
+      <div class="card">
+        <h3>Manajemen Data Mahasiswa</h3>
+        <p>Sistem input dan pengelolaan data mahasiswa untuk keperluan administrasi kampus.<br>
+        <strong>Teknologi:</strong> PHP, MySQL, Bootstrap.<br>
+        <strong>Cara Pembuatan:</strong> Mendesain form input validasi, membuat panel admin untuk melihat dan mencetak data, serta membangun filter pencarian data secara real-time.</p>
+      </div>
+
+      <div class="card">
+        <h3>Pengalaman Leadership di Tiens</h3>
+        <p>Memimpin tim penjualan dan pelatihan di perusahaan produk kesehatan dan rumah tangga.<br>
+        <strong>Teknologi:</strong> Komunikasi langsung, pelatihan, dan presentasi.<br>
+        <strong>Cara Pembuatan:</strong> Menyusun strategi pemasaran tim, mengatur jadwal pelatihan, dan membimbing anggota tim dalam pencapaian target serta pengembangan soft skill.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <p>Email: <a href="satrioaldifirmansyah0@gmail.com">satrioaldifirmansyah0@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/satrio-aldi-firmansyah-2a9759320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">https://www.linkedin.com/in/satrio-aldi-firmansyah-2a9759320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app</a></p>
+    <p>GitHub: <a href="https://github.com/Aldi2801" target="_blank">https://github.com/Aldi2801</a></p>
+  </section>
+
+</body>
+</html>
